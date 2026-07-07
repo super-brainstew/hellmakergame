@@ -1,0 +1,133 @@
+[gd_scene format=3 uid="uid://t11tq7a3xohp"]
+
+[ext_resource type="Script" uid="uid://o5re73txwa2v" path="res://scripts/HellLayer.gd" id="1_eo5ga"]
+[ext_resource type="Texture2D" uid="uid://d1tyx7mam54ye" path="res://GFX/layers/Hell_Maker_lust.png" id="1_rs622"]
+[ext_resource type="Texture2D" uid="uid://deibxdxlst175" path="res://GFX/icons/Hell_Maker_souls_icon.png" id="2_eo5ga"]
+[ext_resource type="Script" uid="uid://cqbwul48exu2b" path="res://scripts/lust_souls_ticker.gd" id="3_7ua04"]
+[ext_resource type="Script" uid="uid://bsqvsbo43r3xl" path="res://scripts/lust_souls_amount.gd" id="4_ruqul"]
+[ext_resource type="FontFile" uid="uid://ch7mglhij6xnk" path="res://GFX/Breath of the House.ttf" id="5_4lbgy"]
+[ext_resource type="Script" uid="uid://bmtej0f441r0v" path="res://scripts/lust_temp_cost.gd" id="6_ajgc3"]
+[ext_resource type="Texture2D" uid="uid://c3v8j3rwwyay" path="res://GFX/icons/Hell_Maker_fire_icon.png" id="7_k3jij"]
+[ext_resource type="Texture2D" uid="uid://cx8lr74mmqdy5" path="res://GFX/fire_button/lust/Hell_Maker_fire_button_lust.png" id="8_ykvcu"]
+[ext_resource type="Texture2D" uid="uid://b1dyxesppy3f4" path="res://GFX/fire_button/lust/Hell_Maker_fire_button_lust_hover.png" id="9_k48d6"]
+[ext_resource type="Texture2D" uid="uid://brj3f4ugd5jie" path="res://GFX/fire_button/lust/Hell_Maker_fire_button_lust_pressed.png" id="10_ofp86"]
+[ext_resource type="Texture2D" uid="uid://ciktir3lenaro" path="res://GFX/therm/Hell_Maker_therm_all.png" id="11_ux3an"]
+[ext_resource type="Script" uid="uid://ce6462u32bgb2" path="res://scripts/souls_per_sec.gd" id="12_1vvw7"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7mycd"]
+bg_color = Color(0.9309662, 0.338186, 0.7136931, 1)
+
+[sub_resource type="FontVariation" id="FontVariation_kq58d"]
+base_font = ExtResource("5_4lbgy")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_facbu"]
+atlas = ExtResource("11_ux3an")
+region = Rect2(0, 0, 249, 87)
+
+[node name="LustUI" type="Node2D" unique_id=516431301 node_paths=PackedStringArray("progress_bar", "temp_cost_text", "souls_per_sec_text", "heat_temp_button", "ticker", "decay_timer", "souls_regen_timer")]
+visible = false
+script = ExtResource("1_eo5ga")
+layer_name = "lust"
+progress_bar = NodePath("LustUIToggle/LustSoulsAmount")
+temp_cost_text = NodePath("LustUIToggle/LustTempCost")
+souls_per_sec_text = NodePath("LustUIToggle/LustSoulsPerSec")
+heat_temp_button = NodePath("LustUIToggle/Lust_Temp_All")
+ticker = NodePath("LustUIToggle/LustSoulsTicker")
+decay_timer = NodePath("LustUIToggle/LustHeatDecayTimer")
+souls_regen_timer = NodePath("")
+heat_lvl_cost_base_rate = 100
+heat_lvl_cost = 100
+heat_lvl_next_cost = 100
+max_souls = 1000
+soul_gen_base_rate = 10
+soul_gen_rate = 10
+metadata/_custom_type_script = "uid://o5re73txwa2v"
+
+[node name="LustUIToggle" type="Control" parent="." unique_id=324997541]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 363.0
+offset_top = 485.0
+offset_right = 403.0
+offset_bottom = 525.0
+
+[node name="HellMakerLust" type="Sprite2D" parent="LustUIToggle" unique_id=178333829]
+position = Vector2(181, -45)
+texture = ExtResource("1_rs622")
+
+[node name="LustSoulsTicker" type="TextureProgressBar" parent="LustUIToggle" unique_id=1612502127]
+layout_mode = 0
+offset_left = 49.0
+offset_top = -77.0
+offset_right = 124.0
+offset_bottom = 1.0
+scale = Vector2(0.8, 0.8)
+value = 100.0
+fill_mode = 3
+texture_progress = ExtResource("2_eo5ga")
+tint_over = Color(0.012617188, 0.012617188, 0.012617188, 0)
+tint_progress = Color(0.05882353, 0.2, 0.38431373, 1)
+script = ExtResource("3_7ua04")
+
+[node name="LustSoulsAmount" type="ProgressBar" parent="LustUIToggle" unique_id=1540784575]
+layout_mode = 0
+offset_left = 123.0
+offset_top = -82.0
+offset_right = 452.0
+offset_bottom = -6.0
+theme_override_styles/fill = SubResource("StyleBoxFlat_7mycd")
+max_value = 1000.0
+show_percentage = false
+script = ExtResource("4_ruqul")
+
+[node name="LustTempCost" type="Label" parent="LustUIToggle" unique_id=1026268814]
+layout_mode = 0
+offset_left = -215.76556
+offset_right = -63.765564
+offset_bottom = 36.0
+theme_override_fonts/font = SubResource("FontVariation_kq58d")
+theme_override_font_sizes/font_size = 24
+text = "100"
+vertical_alignment = 1
+script = ExtResource("6_ajgc3")
+
+[node name="HellMakerFireIcon3" type="Sprite2D" parent="LustUIToggle" unique_id=193337994]
+position = Vector2(-229.76563, 13)
+scale = Vector2(0.21595126, 0.21595128)
+texture = ExtResource("7_k3jij")
+
+[node name="Lust_Fire" type="TextureButton" parent="LustUIToggle" unique_id=1156104077]
+layout_mode = 0
+offset_left = 490.0
+offset_top = -87.0
+offset_right = 616.0
+offset_bottom = 2.0
+texture_normal = ExtResource("8_ykvcu")
+texture_pressed = ExtResource("9_k48d6")
+texture_hover = ExtResource("10_ofp86")
+
+[node name="Lust_Temp_All" type="TextureButton" parent="LustUIToggle" unique_id=759890663]
+layout_mode = 0
+offset_left = -252.0
+offset_top = -89.0
+offset_right = -2.0
+texture_normal = SubResource("AtlasTexture_facbu")
+
+[node name="LustSoulsPerSec" type="Label" parent="LustUIToggle" unique_id=831434658]
+layout_mode = 0
+offset_right = 152.0
+offset_bottom = 36.0
+theme_override_fonts/font = SubResource("FontVariation_kq58d")
+theme_override_font_sizes/font_size = 24
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("12_1vvw7")
+
+[node name="LustHeatDecayTimer" type="Timer" parent="LustUIToggle" unique_id=1306795080]
+wait_time = 20.0
+autostart = true
+
+[connection signal="heat_lvl_changed" from="." to="LustUIToggle/LustSoulsTicker" method="_on_lust_ui_heat_lvl_changed"]
+[connection signal="heat_lvl_cost_changed" from="." to="LustUIToggle/LustTempCost" method="_on_lust_ui_heat_lvl_cost_changed"]
+[connection signal="soul_gen_rate_changed" from="." to="LustUIToggle/LustSoulsPerSec" method="_on_lust_ui_soul_gen_rate_changed"]
+[connection signal="souls_per_layer_changed" from="." to="LustUIToggle/LustSoulsAmount" method="_on_lust_ui_souls_per_layer_changed"]

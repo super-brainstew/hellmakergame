@@ -1,0 +1,1508 @@
+[gd_scene format=3 uid="uid://djujmjl5kdhf"]
+
+[ext_resource type="Texture2D" uid="uid://dswrev4c75bdh" path="res://GFX/Hell_Maker_mockup_blank.png" id="1_5vw27"]
+[ext_resource type="Script" uid="uid://dn0deeohws3kg" path="res://scripts/DataManager.gd" id="1_82xsv"]
+[ext_resource type="Texture2D" uid="uid://g7ure2ah8usw" path="res://GFX/Hell_Maker_mockup.png" id="1_h2yge"]
+[ext_resource type="Texture2D" uid="uid://dv00ohhnlbgvh" path="res://GFX/Hell_Maker_background.png" id="1_w48qg"]
+[ext_resource type="Texture2D" uid="uid://x0fukbpcbrvi" path="res://GFX/Hell_Maker_mockup_2.png" id="2_1bvp3"]
+[ext_resource type="Script" uid="uid://bsqvsbo43r3xl" path="res://scripts/lust_souls_amount.gd" id="5_272bh"]
+[ext_resource type="Script" uid="uid://dnb8pwbfnbbja" path="res://scripts/total_fire.gd" id="5_lquwl"]
+[ext_resource type="Script" uid="uid://o5re73txwa2v" path="res://scripts/HellLayer.gd" id="6_0rl1p"]
+[ext_resource type="Script" uid="uid://bh3drrmae80b2" path="res://scripts/total_souls.gd" id="6_7mycd"]
+[ext_resource type="Texture2D" uid="uid://desqtf3wfm1ep" path="res://GFX/heads/Hell_Maker_head_0.png" id="7_0rl1p"]
+[ext_resource type="FontFile" uid="uid://ch7mglhij6xnk" path="res://GFX/Breath of the House.ttf" id="7_kek77"]
+[ext_resource type="Texture2D" uid="uid://bo4pl3h6nbpmt" path="res://GFX/heads/Hell_Maker_head_1.png" id="8_ok6jj"]
+[ext_resource type="Texture2D" uid="uid://c08iligt428nh" path="res://GFX/heads/Hell_Maker_head_2.png" id="9_facbu"]
+[ext_resource type="Texture2D" uid="uid://ca76mko00mmeh" path="res://GFX/heads/Hell_Maker_head_3.png" id="10_b1qrp"]
+[ext_resource type="Texture2D" uid="uid://cx2jq1ie1u1lc" path="res://GFX/heads/Hell_Maker_head_4.png" id="11_come4"]
+[ext_resource type="Texture2D" uid="uid://d1tyx7mam54ye" path="res://GFX/layers/Hell_Maker_lust.png" id="11_ycdy4"]
+[ext_resource type="Texture2D" uid="uid://fgt3fi2plcie" path="res://GFX/heads/Hell_Maker_head_5.png" id="12_h8e4i"]
+[ext_resource type="Texture2D" uid="uid://oi25m574o22e" path="res://GFX/Hell_Maker_unlock.png" id="12_w48qg"]
+[ext_resource type="Texture2D" uid="uid://deibxdxlst175" path="res://GFX/icons/Hell_Maker_souls_icon.png" id="13_2cqfq"]
+[ext_resource type="Texture2D" uid="uid://wlurvu0muhu7" path="res://GFX/heads/Hell_Maker_head_6.png" id="13_4lmeg"]
+[ext_resource type="Texture2D" uid="uid://c3v8j3rwwyay" path="res://GFX/icons/Hell_Maker_fire_icon.png" id="13_vivmo"]
+[ext_resource type="Texture2D" uid="uid://b6kcpw7nl7bp7" path="res://GFX/heads/Hell_Maker_head_7.png" id="14_0cp0l"]
+[ext_resource type="Texture2D" uid="uid://cx8lr74mmqdy5" path="res://GFX/fire_button/lust/Hell_Maker_fire_button_lust.png" id="14_1u8w0"]
+[ext_resource type="Texture2D" uid="uid://brj3f4ugd5jie" path="res://GFX/fire_button/lust/Hell_Maker_fire_button_lust_pressed.png" id="15_0odxb"]
+[ext_resource type="Texture2D" uid="uid://b1dyxesppy3f4" path="res://GFX/fire_button/lust/Hell_Maker_fire_button_lust_hover.png" id="16_lswn8"]
+[ext_resource type="Script" uid="uid://ce6462u32bgb2" path="res://scripts/souls_per_sec.gd" id="23_0odxb"]
+[ext_resource type="Texture2D" uid="uid://bwcys5ucmnxe1" path="res://GFX/therm/Hell_Maker_therm_0.png" id="28_4k2k6"]
+[ext_resource type="Texture2D" uid="uid://dsgo7llramskh" path="res://GFX/therm/Hell_Maker_therm_1.png" id="29_0rl1p"]
+[ext_resource type="Texture2D" uid="uid://y2awnmr5k6rd" path="res://GFX/therm/Hell_Maker_therm_2.png" id="30_ok6jj"]
+[ext_resource type="Texture2D" uid="uid://doer15noof8nr" path="res://GFX/therm/Hell_Maker_therm_3.png" id="31_facbu"]
+[ext_resource type="Texture2D" uid="uid://co7bmyeropl7p" path="res://GFX/therm/Hell_Maker_therm_4.png" id="32_b1qrp"]
+[ext_resource type="Texture2D" uid="uid://dvjon7mbh0ekq" path="res://GFX/therm/Hell_Maker_therm_5.png" id="33_come4"]
+[ext_resource type="Texture2D" uid="uid://87xolkm6hbfq" path="res://GFX/layers/Hell_Maker_gluttony.png" id="33_jq2sk"]
+[ext_resource type="Script" uid="uid://voimbml8t4lo" path="res://gluttony_souls_amount.gd" id="34_b1qrp"]
+[ext_resource type="Texture2D" uid="uid://pkqpx7f6k50n" path="res://GFX/fire_button/gluttony/Hell_Maker_fire_button_gluttony-40.png" id="34_ok6jj"]
+[ext_resource type="Texture2D" uid="uid://bylcowr7eib5k" path="res://GFX/fire_button/gluttony/Hell_Maker_fire_button_gluttony_hover-42.png" id="35_facbu"]
+[ext_resource type="Texture2D" uid="uid://cjua54m3imm2d" path="res://GFX/fire_button/gluttony/Hell_Maker_fire_button_gluttony_pressed-41.png" id="36_b1qrp"]
+[ext_resource type="Script" uid="uid://dl7ftmbc0f4sp" path="res://gluttony_souls_per_sec.gd" id="38_come4"]
+[ext_resource type="Texture2D" uid="uid://cepqfyenwqdol" path="res://GFX/layers/Hell_Maker_greed.png" id="39_gngh3"]
+[ext_resource type="Script" uid="uid://bios62w1mk5cg" path="res://greed_souls_amount.gd" id="39_h8e4i"]
+[ext_resource type="Script" uid="uid://dp3g8d8rgklmf" path="res://greed_souls_per_sec.gd" id="40_4lmeg"]
+[ext_resource type="Texture2D" uid="uid://dpu4c6xwxnq37" path="res://GFX/fire_button/Hell_Maker_mockup-43.png" id="41_0n3wm"]
+[ext_resource type="Texture2D" uid="uid://d3j6eglfxs54c" path="res://GFX/fire_button/Hell_Maker_mockup-45.png" id="42_qnost"]
+[ext_resource type="Texture2D" uid="uid://bbqwnvnnlo08n" path="res://GFX/fire_button/Hell_Maker_mockup-44.png" id="43_wnkbs"]
+[ext_resource type="Script" uid="uid://k3l4hnyy08b3" path="res://sloth_souls_amount.gd" id="45_qnost"]
+[ext_resource type="Texture2D" uid="uid://cpj2r7si56446" path="res://GFX/layers/Hell_Maker_sloth.png" id="45_uypp3"]
+[ext_resource type="Texture2D" uid="uid://cr1ftc16i55cl" path="res://GFX/fire_button/Hell_Maker_mockup-46.png" id="46_0cbny"]
+[ext_resource type="Script" uid="uid://bfrgc5q78h57g" path="res://sloth_souls_per_sec.gd" id="46_wnkbs"]
+[ext_resource type="Texture2D" uid="uid://ohyufe5aqoii" path="res://GFX/fire_button/Hell_Maker_mockup-48.png" id="47_hrvbo"]
+[ext_resource type="Texture2D" uid="uid://3tlxh616ctut" path="res://GFX/fire_button/Hell_Maker_mockup-47.png" id="48_uypp3"]
+[ext_resource type="Texture2D" uid="uid://cudjsghusye1i" path="res://GFX/layers/Hell_Maker_wrath.png" id="51_blkrb"]
+[ext_resource type="Script" uid="uid://ck3lk0mewtup2" path="res://wrath_souls_amount.gd" id="52_abqjc"]
+[ext_resource type="Script" uid="uid://c2i0ejuaub46n" path="res://wrath_souls_per_sec.gd" id="53_6iyjs"]
+[ext_resource type="Texture2D" uid="uid://cb7tmuv8yh77p" path="res://GFX/fire_button/Hell_Maker_mockup-49.png" id="53_e71vb"]
+[ext_resource type="Texture2D" uid="uid://ss0umg1gxcp" path="res://GFX/fire_button/Hell_Maker_mockup-51.png" id="54_rnkwl"]
+[ext_resource type="Texture2D" uid="uid://biwrcbto64hd6" path="res://GFX/fire_button/Hell_Maker_mockup-50.png" id="55_vke2r"]
+[ext_resource type="Texture2D" uid="uid://dt2bsxncd62qo" path="res://GFX/layers/Hell_Maker_envy.png" id="57_uit24"]
+[ext_resource type="Script" uid="uid://ddfx0lxgtjcuc" path="res://envy_souls_amount.gd" id="57_vke2r"]
+[ext_resource type="Script" uid="uid://dpexhdkk5wmv0" path="res://envy_souls_per_sec.gd" id="58_uit24"]
+[ext_resource type="Texture2D" uid="uid://cwau1sifqn0op" path="res://GFX/fire_button/Hell_Maker_mockup-52.png" id="59_pjyto"]
+[ext_resource type="Texture2D" uid="uid://c0vt73sh0qmva" path="res://GFX/fire_button/Hell_Maker_mockup-54.png" id="60_sm6fg"]
+[ext_resource type="Texture2D" uid="uid://b6h0gmdu82y1j" path="res://GFX/fire_button/Hell_Maker_mockup-53.png" id="61_b17eg"]
+[ext_resource type="Texture2D" uid="uid://ca6xwebm46rvb" path="res://GFX/layers/Hell_Maker_pride.png" id="63_sm6fg"]
+[ext_resource type="Script" uid="uid://bjif5i2lcl0uo" path="res://pride_souls_amount.gd" id="64_1vm84"]
+[ext_resource type="Texture2D" uid="uid://cluq08kdlewaw" path="res://GFX/fire_button/Hell_Maker_mockup-55.png" id="64_uatky"]
+[ext_resource type="Texture2D" uid="uid://db7t7im3ly0yq" path="res://GFX/fire_button/Hell_Maker_mockup-57.png" id="65_rqtf5"]
+[ext_resource type="Texture2D" uid="uid://gp1qqv6eaa8e" path="res://GFX/fire_button/Hell_Maker_mockup-56.png" id="66_1vm84"]
+[ext_resource type="Script" uid="uid://ds5y1g8rtdiku" path="res://pride_souls_per_sec.gd" id="68_wu3dr"]
+
+[sub_resource type="FontVariation" id="FontVariation_2cqfq"]
+base_font = ExtResource("7_kek77")
+
+[sub_resource type="FontVariation" id="FontVariation_4c57u"]
+base_font = ExtResource("7_kek77")
+
+[sub_resource type="FontVariation" id="FontVariation_efxa6"]
+base_font = ExtResource("7_kek77")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ok6jj"]
+bg_color = Color(0.95350605, 0.35220575, 0.64226353, 1)
+
+[sub_resource type="FontVariation" id="FontVariation_kq58d"]
+base_font = ExtResource("7_kek77")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7mycd"]
+bg_color = Color(0.52328, 0.93, 0.3348, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gngh3"]
+bg_color = Color(0.93, 0.92008, 0.3348, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_blkrb"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_abqjc"]
+bg_color = Color(0.93, 0.19529998, 0.19529998, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1vm84"]
+bg_color = Color(0.19529998, 0.58713996, 0.93, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wu3dr"]
+bg_color = Color(0, 0, 0, 1)
+
+[node name="Main" type="Node" unique_id=1296413857]
+
+[node name="DataManager" type="Node" parent="." unique_id=1628298832]
+script = ExtResource("1_82xsv")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=792824353]
+offset_right = 1080.0
+offset_bottom = 1920.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_lock_ = true
+
+[node name="HellMakerBackground" type="Sprite2D" parent="." unique_id=1562788442]
+texture = ExtResource("1_w48qg")
+centered = false
+metadata/_edit_lock_ = true
+
+[node name="HellMakerMockupBlank" type="Sprite2D" parent="." unique_id=220803260]
+visible = false
+texture = ExtResource("1_5vw27")
+centered = false
+metadata/_edit_lock_ = true
+
+[node name="HellMakerMockup2" type="Sprite2D" parent="." unique_id=1657276571]
+visible = false
+texture = ExtResource("2_1bvp3")
+centered = false
+metadata/_edit_lock_ = true
+
+[node name="HellMakerMockup" type="Sprite2D" parent="." unique_id=1402466622]
+visible = false
+texture = ExtResource("1_h2yge")
+centered = false
+metadata/_edit_lock_ = true
+
+[node name="GlobalUI" type="Control" parent="." unique_id=1629168783]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Heads" type="Node2D" parent="GlobalUI" unique_id=403390156]
+
+[node name="HellMakerHead0" type="Sprite2D" parent="GlobalUI/Heads" unique_id=704596260]
+position = Vector2(544, 200)
+texture = ExtResource("7_0rl1p")
+
+[node name="HellMakerHead1" type="Sprite2D" parent="GlobalUI/Heads" unique_id=1132910662]
+visible = false
+position = Vector2(544, 200)
+texture = ExtResource("8_ok6jj")
+
+[node name="HellMakerHead2" type="Sprite2D" parent="GlobalUI/Heads" unique_id=1130107659]
+visible = false
+position = Vector2(544, 200)
+texture = ExtResource("9_facbu")
+
+[node name="HellMakerHead3" type="Sprite2D" parent="GlobalUI/Heads" unique_id=1738166193]
+visible = false
+position = Vector2(544, 200)
+texture = ExtResource("10_b1qrp")
+
+[node name="HellMakerHead4" type="Sprite2D" parent="GlobalUI/Heads" unique_id=46938581]
+visible = false
+position = Vector2(544, 200)
+texture = ExtResource("11_come4")
+
+[node name="HellMakerHead5" type="Sprite2D" parent="GlobalUI/Heads" unique_id=1257633645]
+visible = false
+position = Vector2(544, 200)
+texture = ExtResource("12_h8e4i")
+
+[node name="HellMakerHead6" type="Sprite2D" parent="GlobalUI/Heads" unique_id=1426492832]
+visible = false
+position = Vector2(544, 200)
+texture = ExtResource("13_4lmeg")
+
+[node name="HellMakerHead7" type="Sprite2D" parent="GlobalUI/Heads" unique_id=1231540227]
+visible = false
+position = Vector2(544, 200)
+texture = ExtResource("14_0cp0l")
+
+[node name="Unlock_Lust" type="TextureButton" parent="GlobalUI" unique_id=1235327984]
+layout_mode = 0
+offset_left = 144.0
+offset_top = 360.0
+offset_right = 944.0
+offset_bottom = 518.0
+texture_normal = ExtResource("12_w48qg")
+stretch_mode = 0
+
+[node name="HellMakerFireIcon2" type="Sprite2D" parent="GlobalUI/Unlock_Lust" unique_id=647815490]
+position = Vector2(400, 112)
+scale = Vector2(0.35447758, 0.35447758)
+texture = ExtResource("13_vivmo")
+
+[node name="LustUnlockCost2" type="Label" parent="GlobalUI/Unlock_Lust" unique_id=686575125]
+layout_mode = 0
+offset_left = 240.0
+offset_top = 24.0
+offset_right = 560.0
+offset_bottom = 104.0
+theme_override_fonts/font = SubResource("FontVariation_2cqfq")
+theme_override_font_sizes/font_size = 50
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Unlock_Gluttony" type="TextureButton" parent="GlobalUI" unique_id=1014825027]
+layout_mode = 0
+offset_left = 150.655
+offset_top = 584.285
+offset_right = 950.6559
+offset_bottom = 742.285
+texture_normal = ExtResource("12_w48qg")
+stretch_mode = 0
+
+[node name="HellMakerFireIcon" type="Sprite2D" parent="GlobalUI/Unlock_Gluttony" unique_id=1628239760]
+position = Vector2(400, 112)
+scale = Vector2(0.35447758, 0.35447758)
+texture = ExtResource("13_vivmo")
+
+[node name="GluttonyUnlockCost" type="Label" parent="GlobalUI/Unlock_Gluttony" unique_id=929748188]
+layout_mode = 0
+offset_left = 240.0
+offset_top = 24.0
+offset_right = 560.0
+offset_bottom = 104.0
+theme_override_fonts/font = SubResource("FontVariation_2cqfq")
+theme_override_font_sizes/font_size = 50
+text = "1,000"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Unlock_Greed" type="TextureButton" parent="GlobalUI" unique_id=191799950]
+layout_mode = 0
+offset_left = 145.855
+offset_top = 806.52
+offset_right = 945.85535
+offset_bottom = 964.5205
+texture_normal = ExtResource("12_w48qg")
+stretch_mode = 0
+
+[node name="HellMakerFireIcon" type="Sprite2D" parent="GlobalUI/Unlock_Greed" unique_id=975173202]
+position = Vector2(400, 112)
+scale = Vector2(0.35447758, 0.35447758)
+texture = ExtResource("13_vivmo")
+
+[node name="GreedUnlockCost" type="Label" parent="GlobalUI/Unlock_Greed" unique_id=147105459]
+layout_mode = 0
+offset_left = 240.0
+offset_top = 24.0
+offset_right = 560.0
+offset_bottom = 104.0
+theme_override_fonts/font = SubResource("FontVariation_2cqfq")
+theme_override_font_sizes/font_size = 50
+text = "15,000"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Unlock_Sloth" type="TextureButton" parent="GlobalUI" unique_id=1192785945]
+layout_mode = 0
+offset_left = 142.54
+offset_top = 1030.7
+offset_right = 942.54
+offset_bottom = 1188.7001
+texture_normal = ExtResource("12_w48qg")
+stretch_mode = 0
+
+[node name="HellMakerFireIcon" type="Sprite2D" parent="GlobalUI/Unlock_Sloth" unique_id=122568598]
+position = Vector2(400, 112)
+scale = Vector2(0.35447758, 0.35447758)
+texture = ExtResource("13_vivmo")
+
+[node name="SlothUnlockCost" type="Label" parent="GlobalUI/Unlock_Sloth" unique_id=1960718922]
+layout_mode = 0
+offset_left = 240.0
+offset_top = 24.0
+offset_right = 560.0
+offset_bottom = 104.0
+theme_override_fonts/font = SubResource("FontVariation_2cqfq")
+theme_override_font_sizes/font_size = 50
+text = "60,000"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Unlock_Wrath" type="TextureButton" parent="GlobalUI" unique_id=1248817684]
+layout_mode = 0
+offset_left = 144.695
+offset_top = 1261.755
+offset_right = 944.696
+offset_bottom = 1419.7535
+texture_normal = ExtResource("12_w48qg")
+stretch_mode = 0
+
+[node name="HellMakerFireIcon" type="Sprite2D" parent="GlobalUI/Unlock_Wrath" unique_id=976956930]
+position = Vector2(400, 112)
+scale = Vector2(0.35447758, 0.35447758)
+texture = ExtResource("13_vivmo")
+
+[node name="WrathUnlockCost" type="Label" parent="GlobalUI/Unlock_Wrath" unique_id=189137513]
+layout_mode = 0
+offset_left = 240.0
+offset_top = 24.0
+offset_right = 560.0
+offset_bottom = 104.0
+theme_override_fonts/font = SubResource("FontVariation_2cqfq")
+theme_override_font_sizes/font_size = 50
+text = "500,000"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Unlock_Envy" type="TextureButton" parent="GlobalUI" unique_id=1146673556]
+layout_mode = 0
+offset_left = 138.0
+offset_top = 1478.0
+offset_right = 938.001
+offset_bottom = 1635.9985
+texture_normal = ExtResource("12_w48qg")
+stretch_mode = 0
+
+[node name="HellMakerFireIcon" type="Sprite2D" parent="GlobalUI/Unlock_Envy" unique_id=679684360]
+position = Vector2(400, 112)
+scale = Vector2(0.35447758, 0.35447758)
+texture = ExtResource("13_vivmo")
+
+[node name="EnvyUnlockCost" type="Label" parent="GlobalUI/Unlock_Envy" unique_id=934449222]
+layout_mode = 0
+offset_left = 240.0
+offset_top = 24.0
+offset_right = 560.0
+offset_bottom = 104.0
+theme_override_fonts/font = SubResource("FontVariation_2cqfq")
+theme_override_font_sizes/font_size = 50
+text = "3,000,000"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Unlock_Pride" type="TextureButton" parent="GlobalUI" unique_id=1268736924]
+layout_mode = 0
+offset_left = 138.0
+offset_top = 1706.0
+offset_right = 938.001
+offset_bottom = 1863.9985
+texture_normal = ExtResource("12_w48qg")
+stretch_mode = 0
+
+[node name="HellMakerFireIcon" type="Sprite2D" parent="GlobalUI/Unlock_Pride" unique_id=613199804]
+position = Vector2(400, 112)
+scale = Vector2(0.35447758, 0.35447758)
+texture = ExtResource("13_vivmo")
+
+[node name="PrideUnlockCost" type="Label" parent="GlobalUI/Unlock_Pride" unique_id=1691934711]
+layout_mode = 0
+offset_left = 240.0
+offset_top = 24.0
+offset_right = 560.0
+offset_bottom = 104.0
+theme_override_fonts/font = SubResource("FontVariation_2cqfq")
+theme_override_font_sizes/font_size = 50
+text = "50,000,000"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TotalFire" type="Label" parent="GlobalUI" unique_id=2138659977]
+layout_mode = 0
+offset_left = 189.0
+offset_top = 120.0
+offset_right = 452.0
+offset_bottom = 166.0
+theme_override_fonts/font = SubResource("FontVariation_4c57u")
+theme_override_font_sizes/font_size = 45
+text = "0"
+vertical_alignment = 1
+script = ExtResource("5_lquwl")
+
+[node name="TotalSouls" type="Label" parent="GlobalUI" unique_id=1192582872]
+layout_mode = 0
+offset_left = 185.0
+offset_top = 199.0
+offset_right = 448.0
+offset_bottom = 235.0
+theme_override_fonts/font = SubResource("FontVariation_efxa6")
+theme_override_font_sizes/font_size = 35
+text = "0"
+script = ExtResource("6_7mycd")
+
+[node name="SoulsRegenTimer" type="Timer" parent="." unique_id=1586187682]
+autostart = true
+
+[node name="LustLayer" type="Node" parent="." unique_id=904648158 node_paths=PackedStringArray("progress_bar", "temp_cost_text", "souls_per_sec_text", "heat_temp_button", "ticker", "decay_timer", "souls_regen_timer")]
+script = ExtResource("6_0rl1p")
+layer_name = "lust"
+progress_bar = NodePath("LustUIToggle/LustSoulsAmount")
+temp_cost_text = NodePath("LustUIToggle/LustTempCost")
+souls_per_sec_text = NodePath("LustUIToggle/LustSoulsPerSec")
+heat_temp_button = NodePath("LustUIToggle/Lust_Temp_0")
+ticker = NodePath("LustUIToggle/LustSoulsTicker")
+decay_timer = NodePath("LustUIToggle/LustHeatDecayTimer")
+souls_regen_timer = NodePath("../SoulsRegenTimer")
+heat_lvl_cost_base_rate = 100
+heat_lvl_cost = 100
+heat_lvl_next_cost = 100
+max_souls = 1000
+soul_gen_base_rate = 10
+soul_gen_rate = 10
+metadata/_custom_type_script = "uid://o5re73txwa2v"
+
+[node name="LustUIToggle" type="Control" parent="LustLayer" unique_id=324997541]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_left = 363.0
+offset_top = 485.0
+offset_right = 403.0
+offset_bottom = 525.0
+
+[node name="HellMakerLust" type="Sprite2D" parent="LustLayer/LustUIToggle" unique_id=178333829]
+position = Vector2(181, -45)
+texture = ExtResource("11_ycdy4")
+
+[node name="LustSoulsTicker" type="TextureProgressBar" parent="LustLayer/LustUIToggle" unique_id=1612502127]
+layout_mode = 0
+offset_left = 49.0
+offset_top = -77.0
+offset_right = 124.0
+offset_bottom = 1.0
+scale = Vector2(0.8, 0.8)
+value = 100.0
+fill_mode = 3
+texture_progress = ExtResource("13_2cqfq")
+tint_over = Color(0.012617188, 0.012617188, 0.012617188, 0)
+tint_progress = Color(0.05882353, 0.2, 0.38431373, 1)
+
+[node name="LustSoulsAmount" type="ProgressBar" parent="LustLayer/LustUIToggle" unique_id=1540784575]
+layout_mode = 0
+offset_left = 123.0
+offset_top = -81.0
+offset_right = 451.0
+offset_bottom = -6.0
+theme_override_styles/fill = SubResource("StyleBoxFlat_ok6jj")
+max_value = 1000.0
+show_percentage = false
+script = ExtResource("5_272bh")
+
+[node name="LustTempCost" type="Label" parent="LustLayer/LustUIToggle" unique_id=1026268814]
+layout_mode = 0
+offset_left = -215.76556
+offset_right = -63.765564
+offset_bottom = 36.0
+theme_override_fonts/font = SubResource("FontVariation_kq58d")
+theme_override_font_sizes/font_size = 24
+text = "100"
+vertical_alignment = 1
+
+[node name="HellMakerFireIcon3" type="Sprite2D" parent="LustLayer/LustUIToggle" unique_id=193337994]
+position = Vector2(-229.76563, 13)
+scale = Vector2(0.21595126, 0.21595128)
+texture = ExtResource("13_vivmo")
+
+[node name="Lust_Fire" type="TextureButton" parent="LustLayer/LustUIToggle" unique_id=1156104077]
+layout_mode = 0
+offset_left = 490.0
+offset_top = -87.0
+offset_right = 616.0
+offset_bottom = 2.0
+texture_normal = ExtResource("14_1u8w0")
+texture_pressed = ExtResource("16_lswn8")
+texture_hover = ExtResource("15_0odxb")
+
+[node name="Lust_Temp_0" type="TextureButton" parent="LustLayer/LustUIToggle" unique_id=759890663]
+layout_mode = 0
+offset_left = -252.0
+offset_top = -89.0
+offset_right = -2.0
+texture_normal = ExtResource("28_4k2k6")
+
+[node name="Lust_Temp_1" type="TextureButton" parent="LustLayer/LustUIToggle" unique_id=1545922220]
+visible = false
+layout_mode = 0
+offset_left = -252.0
+offset_top = -89.0
+offset_right = -2.0
+texture_normal = ExtResource("29_0rl1p")
+
+[node name="Lust_Temp_2" type="TextureButton" parent="LustLayer/LustUIToggle" unique_id=1554958309]
+visible = false
+layout_mode = 0
+offset_left = -252.0
+offset_top = -89.0
+offset_right = -2.0
+texture_normal = ExtResource("30_ok6jj")
+
+[node name="Lust_Temp_3" type="TextureButton" parent="LustLayer/LustUIToggle" unique_id=915734171]
+visible = false
+layout_mode = 0
+offset_left = -252.0
+offset_top = -89.0
+offset_right = -2.0
+texture_normal = ExtResource("31_facbu")
+
+[node name="Lust_Temp_4" type="TextureButton" parent="LustLayer/LustUIToggle" unique_id=339089012]
+visible = false
+layout_mode = 0
+offset_left = -252.0
+offset_top = -89.0
+offset_right = -2.0
+texture_normal = ExtResource("32_b1qrp")
+
+[node name="Lust_Temp_5" type="TextureButton" parent="LustLayer/LustUIToggle" unique_id=1139115756]
+visible = false
+layout_mode = 0
+offset_left = -252.0
+offset_top = -89.0
+offset_right = -2.0
+texture_normal = ExtResource("33_come4")
+
+[node name="LustSoulsPerSec" type="Label" parent="LustLayer/LustUIToggle" unique_id=831434658]
+layout_mode = 0
+offset_left = 5.0
+offset_top = -1.0
+offset_right = 157.0
+offset_bottom = 35.0
+theme_override_fonts/font = SubResource("FontVariation_kq58d")
+theme_override_font_sizes/font_size = 24
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("23_0odxb")
+
+[node name="LustHeatDecayTimer" type="Timer" parent="LustLayer/LustUIToggle" unique_id=1306795080]
+wait_time = 15.0
+autostart = true
+
+[node name="GluttonyLayer" type="Node" parent="." unique_id=435558989 node_paths=PackedStringArray("progress_bar", "temp_cost_text", "souls_per_sec_text", "heat_temp_button", "ticker", "decay_timer", "souls_regen_timer")]
+script = ExtResource("6_0rl1p")
+layer_name = "gluttony"
+progress_bar = NodePath("GluttonyUIToggle/GluttonySoulsAmount")
+temp_cost_text = NodePath("GluttonyUIToggle/GluttonyTempCost")
+souls_per_sec_text = NodePath("GluttonyUIToggle/GluttonySoulsPerSec")
+heat_temp_button = NodePath("GluttonyUIToggle/Gluttony_Temp_0")
+ticker = NodePath("GluttonyUIToggle/GluttonySoulsTicker")
+decay_timer = NodePath("GluttonyUIToggle/GluttonyHeatDecayTimer")
+souls_regen_timer = NodePath("../SoulsRegenTimer")
+heat_lvl_cost_base_rate = 300
+heat_lvl_cost = 300
+heat_lvl_next_cost = 300
+max_souls = 5000
+soul_gen_base_rate = 60
+soul_gen_rate = 60
+metadata/_custom_type_script = "uid://o5re73txwa2v"
+
+[node name="GluttonyUIToggle" type="Control" parent="GluttonyLayer" unique_id=1849649954]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_left = 363.0
+offset_top = 712.27
+offset_right = 403.0
+offset_bottom = 752.27136
+
+[node name="HellMakerGluttony" type="Sprite2D" parent="GluttonyLayer/GluttonyUIToggle" unique_id=1166757705]
+position = Vector2(181, -45)
+texture = ExtResource("33_jq2sk")
+
+[node name="GluttonySoulsTicker" type="TextureProgressBar" parent="GluttonyLayer/GluttonyUIToggle" unique_id=109534762]
+layout_mode = 0
+offset_left = 49.0
+offset_top = -77.0
+offset_right = 124.0
+offset_bottom = 1.0
+scale = Vector2(0.8, 0.8)
+value = 100.0
+fill_mode = 3
+texture_progress = ExtResource("13_2cqfq")
+tint_over = Color(0.012617188, 0.012617188, 0.012617188, 0)
+tint_progress = Color(0.05882353, 0.2, 0.38431373, 1)
+
+[node name="GluttonySoulsAmount" type="ProgressBar" parent="GluttonyLayer/GluttonyUIToggle" unique_id=1615147051]
+layout_mode = 0
+offset_left = 123.0
+offset_top = -79.27002
+offset_right = 451.0
+offset_bottom = -5.2700195
+theme_override_styles/fill = SubResource("StyleBoxFlat_7mycd")
+max_value = 5000.0
+show_percentage = false
+script = ExtResource("34_b1qrp")
+
+[node name="GluttonyTempCost" type="Label" parent="GluttonyLayer/GluttonyUIToggle" unique_id=1756308232]
+layout_mode = 0
+offset_left = -215.76556
+offset_right = -63.765564
+offset_bottom = 36.0
+theme_override_fonts/font = SubResource("FontVariation_kq58d")
+theme_override_font_sizes/font_size = 24
+text = "100"
+vertical_alignment = 1
+
+[node name="HellMakerFireIcon3" type="Sprite2D" parent="GluttonyLayer/GluttonyUIToggle" unique_id=298089959]
+position = Vector2(-229.76563, 13)
+scale = Vector2(0.21595126, 0.21595128)
+texture = ExtResource("13_vivmo")
+
+[node name="Gluttony_Fire" type="TextureButton" parent="GluttonyLayer/GluttonyUIToggle" unique_id=994333131]
+layout_mode = 0
+offset_left = 490.0
+offset_top = -87.0
+offset_right = 616.0
+offset_bottom = 2.0
+texture_normal = ExtResource("34_ok6jj")
+texture_pressed = ExtResource("35_facbu")
+texture_hover = ExtResource("36_b1qrp")
+
+[node name="Gluttony_Temp_0" type="TextureButton" parent="GluttonyLayer/GluttonyUIToggle" unique_id=733847256]
+layout_mode = 0
+offset_left = -252.0
+offset_top = -89.0
+offset_right = -2.0
+texture_normal = ExtResource("28_4k2k6")
+
+[node name="Gluttony_Temp_1" type="TextureButton" parent="GluttonyLayer/GluttonyUIToggle" unique_id=569729058]
+visible = false
+layout_mode = 0
+offset_left = -252.0
+offset_top = -89.0
+offset_right = -2.0
+texture_normal = ExtResource("29_0rl1p")
+
+[node name="Gluttony_Temp_2" type="TextureButton" parent="GluttonyLayer/GluttonyUIToggle" unique_id=2084323427]
+visible = false
+layout_mode = 0
+offset_left = -252.0
+offset_top = -89.0
+offset_right = -2.0
+texture_normal = ExtResource("30_ok6jj")
+
+[node name="Gluttony_Temp_3" type="TextureButton" parent="GluttonyLayer/GluttonyUIToggle" unique_id=1943747763]
+visible = false
+layout_mode = 0
+offset_left = -252.0
+offset_top = -89.0
+offset_right = -2.0
+texture_normal = ExtResource("31_facbu")
+
+[node name="Gluttony_Temp_4" type="TextureButton" parent="GluttonyLayer/GluttonyUIToggle" unique_id=1049183344]
+visible = false
+layout_mode = 0
+offset_left = -252.0
+offset_top = -89.0
+offset_right = -2.0
+texture_normal = ExtResource("32_b1qrp")
+
+[node name="Gluttony_Temp_5" type="TextureButton" parent="GluttonyLayer/GluttonyUIToggle" unique_id=1777174842]
+visible = false
+layout_mode = 0
+offset_left = -252.0
+offset_top = -89.0
+offset_right = -2.0
+texture_normal = ExtResource("33_come4")
+
+[node name="GluttonySoulsPerSec" type="Label" parent="GluttonyLayer/GluttonyUIToggle" unique_id=639514402]
+layout_mode = 0
+offset_left = 5.0
+offset_top = -1.0
+offset_right = 157.0
+offset_bottom = 35.0
+theme_override_fonts/font = SubResource("FontVariation_kq58d")
+theme_override_font_sizes/font_size = 24
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("38_come4")
+
+[node name="GluttonyHeatDecayTimer" type="Timer" parent="GluttonyLayer/GluttonyUIToggle" unique_id=1748992624]
+wait_time = 15.0
+autostart = true
+
+[node name="GreedLayer" type="Node" parent="." unique_id=705480852 node_paths=PackedStringArray("progress_bar", "temp_cost_text", "souls_per_sec_text", "heat_temp_button", "ticker", "decay_timer", "souls_regen_timer")]
+script = ExtResource("6_0rl1p")
+layer_name = "gluttony"
+progress_bar = NodePath("GreedUIToggle/GreedSoulsAmount")
+temp_cost_text = NodePath("GreedUIToggle/GreedTempCost")
+souls_per_sec_text = NodePath("GreedUIToggle/GreedSoulsPerSec")
+heat_temp_button = NodePath("GreedUIToggle/Greed_Temp_0")
+ticker = NodePath("GreedUIToggle/GreedSoulsTicker")
+decay_timer = NodePath("GreedUIToggle/GreedHeatDecayTimer")
+souls_regen_timer = NodePath("../SoulsRegenTimer")
+heat_lvl_cost_base_rate = 600
+heat_lvl_cost = 600
+heat_lvl_next_cost = 600
+max_souls = 10000
+soul_gen_base_rate = 100
+soul_gen_rate = 100
+metadata/_custom_type_script = "uid://o5re73txwa2v"
+
+[node name="GreedUIToggle" type="Control" parent="GreedLayer" unique_id=1429375777]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_left = 363.0
+offset_top = 933.99
+offset_right = 403.0
+offset_bottom = 973.99133
+
+[node name="HellMakerGreed" type="Sprite2D" parent="GreedLayer/GreedUIToggle" unique_id=63348727]
+position = Vector2(181, -45)
+texture = ExtResource("39_gngh3")
+
+[node name="GreedSoulsTicker" type="TextureProgressBar" parent="GreedLayer/GreedUIToggle" unique_id=1301889293]
+layout_mode = 0
+offset_left = 50.0
+offset_top = -71.98999
+offset_right = 125.0
+offset_bottom = 6.01001
+scale = Vector2(0.8, 0.8)
+value = 100.0
+fill_mode = 3
+texture_progress = ExtResource("13_2cqfq")
+tint_over = Color(0.012617188, 0.012617188, 0.012617188, 0)
+tint_progress = Color(0.05882353, 0.2, 0.38431373, 1)
+
+[node name="GreedSoulsAmount" type="ProgressBar" parent="GreedLayer/GreedUIToggle" unique_id=296505566]
+layout_mode = 0
+offset_left = 124.0
+offset_top = -76.98999
+offset_right = 452.0
+offset_bottom = -1.9899902
+theme_override_styles/fill = SubResource("StyleBoxFlat_gngh3")
+max_value = 15000.0
+show_percentage = false
+script = ExtResource("39_h8e4i")
+
+[node name="GreedTempCost" type="Label" parent="GreedLayer/GreedUIToggle" unique_id=700991440]
+layout_mode = 0
+offset_left = -215.76556
+offset_right = -63.765564
+offset_bottom = 36.0
+theme_override_fonts/font = SubResource("FontVariation_kq58d")
+theme_override_font_sizes/font_size = 24
+text = "100"
+vertical_alignment = 1
+
+[node name="HellMakerFireIcon3" type="Sprite2D" parent="GreedLayer/GreedUIToggle" unique_id=984642908]
+position = Vector2(-229.76563, 13)
+scale = Vector2(0.21595126, 0.21595128)
+texture = ExtResource("13_vivmo")
+
+[node name="Greed_Fire" type="TextureButton" parent="GreedLayer/GreedUIToggle" unique_id=54180707]
+layout_mode = 0
+offset_left = 490.0
+offset_top = -82.98999
+offset_right = 616.0
+offset_bottom = 6.01001
+texture_normal = ExtResource("41_0n3wm")
+texture_pressed = ExtResource("42_qnost")
+texture_hover = ExtResource("43_wnkbs")
+
+[node name="Greed_Temp_0" type="TextureButton" parent="GreedLayer/GreedUIToggle" unique_id=1199653304]
+layout_mode = 0
+offset_left = -252.0
+offset_top = -89.0
+offset_right = -2.0
+texture_normal = ExtResource("28_4k2k6")
+
+[node name="Greed_Temp_1" type="TextureButton" parent="GreedLayer/GreedUIToggle" unique_id=1632255341]
+visible = false
+layout_mode = 0
+offset_left = -252.0
+offset_top = -89.0
+offset_right = -2.0
+texture_normal = ExtResource("29_0rl1p")
+
+[node name="Greed_Temp_2" type="TextureButton" parent="GreedLayer/GreedUIToggle" unique_id=945733216]
+visible = false
+layout_mode = 0
+offset_left = -252.0
+offset_top = -89.0
+offset_right = -2.0
+texture_normal = ExtResource("30_ok6jj")
+
+[node name="Greed_Temp_3" type="TextureButton" parent="GreedLayer/GreedUIToggle" unique_id=1330326922]
+visible = false
+layout_mode = 0
+offset_left = -252.0
+offset_top = -89.0
+offset_right = -2.0
+texture_normal = ExtResource("31_facbu")
+
+[node name="Greed_Temp_4" type="TextureButton" parent="GreedLayer/GreedUIToggle" unique_id=119276177]
+visible = false
+layout_mode = 0
+offset_left = -252.0
+offset_top = -89.0
+offset_right = -2.0
+texture_normal = ExtResource("32_b1qrp")
+
+[node name="Greed_Temp_5" type="TextureButton" parent="GreedLayer/GreedUIToggle" unique_id=759901380]
+visible = false
+layout_mode = 0
+offset_left = -252.0
+offset_top = -89.0
+offset_right = -2.0
+texture_normal = ExtResource("33_come4")
+
+[node name="GreedSoulsPerSec" type="Label" parent="GreedLayer/GreedUIToggle" unique_id=636236552]
+layout_mode = 0
+offset_left = 5.0
+offset_top = -1.0
+offset_right = 157.0
+offset_bottom = 35.0
+theme_override_fonts/font = SubResource("FontVariation_kq58d")
+theme_override_font_sizes/font_size = 24
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("40_4lmeg")
+
+[node name="GreedHeatDecayTimer" type="Timer" parent="GreedLayer/GreedUIToggle" unique_id=76084550]
+wait_time = 15.0
+autostart = true
+
+[node name="SlothLayer" type="Node" parent="." unique_id=575999444 node_paths=PackedStringArray("progress_bar", "temp_cost_text", "souls_per_sec_text", "heat_temp_button", "ticker", "decay_timer", "souls_regen_timer")]
+script = ExtResource("6_0rl1p")
+layer_name = "gluttony"
+progress_bar = NodePath("SlothUIToggle/SlothSoulsAmount")
+temp_cost_text = NodePath("SlothUIToggle/SlothTempCost")
+souls_per_sec_text = NodePath("SlothUIToggle/SlothSoulsPerSec")
+heat_temp_button = NodePath("SlothUIToggle/Sloth_Temp_0")
+ticker = NodePath("SlothUIToggle/SlothSoulsTicker")
+decay_timer = NodePath("SlothUIToggle/SlothHeatDecayTimer")
+souls_regen_timer = NodePath("../SoulsRegenTimer")
+heat_lvl_cost_base_rate = 600
+heat_lvl_cost = 600
+heat_lvl_next_cost = 600
+max_souls = 10000
+soul_gen_base_rate = 100
+soul_gen_rate = 100
+metadata/_custom_type_script = "uid://o5re73txwa2v"
+
+[node name="SlothUIToggle" type="Control" parent="SlothLayer" unique_id=2020440999]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_left = 363.0
+offset_top = 1157.245
+offset_right = 403.0
+offset_bottom = 1197.2461
+
+[node name="HellMakerSloth" type="Sprite2D" parent="SlothLayer/SlothUIToggle" unique_id=1291469857]
+position = Vector2(181, -45)
+texture = ExtResource("45_uypp3")
+
+[node name="SlothSoulsTicker" type="TextureProgressBar" parent="SlothLayer/SlothUIToggle" unique_id=617129290]
+layout_mode = 0
+offset_left = 50.0
+offset_top = -66.27002
+offset_right = 125.0
+offset_bottom = 11.72998
+scale = Vector2(0.8, 0.8)
+value = 100.0
+fill_mode = 3
+texture_progress = ExtResource("13_2cqfq")
+tint_over = Color(0.012617188, 0.012617188, 0.012617188, 0)
+tint_progress = Color(0.05882353, 0.2, 0.38431373, 1)
+
+[node name="SlothSoulsAmount" type="ProgressBar" parent="SlothLayer/SlothUIToggle" unique_id=1028085161]
+layout_mode = 0
+offset_left = 123.0
+offset_top = -71.27002
+offset_right = 452.0
+offset_bottom = 3.7299805
+theme_override_styles/fill = SubResource("StyleBoxFlat_blkrb")
+max_value = 15000.0
+show_percentage = false
+script = ExtResource("45_qnost")
+
+[node name="SlothTempCost" type="Label" parent="SlothLayer/SlothUIToggle" unique_id=1794955550]
+layout_mode = 0
+offset_left = -215.76556
+offset_top = 12.72998
+offset_right = -63.765564
+offset_bottom = 48.72998
+theme_override_fonts/font = SubResource("FontVariation_kq58d")
+theme_override_font_sizes/font_size = 24
+text = "100"
+vertical_alignment = 1
+
+[node name="HellMakerFireIcon3" type="Sprite2D" parent="SlothLayer/SlothUIToggle" unique_id=1581384762]
+position = Vector2(-229.76563, 25.72998)
+scale = Vector2(0.21595126, 0.21595128)
+texture = ExtResource("13_vivmo")
+
+[node name="Sloth_Fire" type="TextureButton" parent="SlothLayer/SlothUIToggle" unique_id=202407453]
+layout_mode = 0
+offset_left = 490.0
+offset_top = -76.27002
+offset_right = 616.0
+offset_bottom = 12.72998
+texture_normal = ExtResource("46_0cbny")
+texture_pressed = ExtResource("47_hrvbo")
+texture_hover = ExtResource("48_uypp3")
+
+[node name="Sloth_Temp_0" type="TextureButton" parent="SlothLayer/SlothUIToggle" unique_id=358466079]
+layout_mode = 0
+offset_left = -252.0
+offset_top = -76.27002
+offset_right = -2.0
+offset_bottom = 12.72998
+texture_normal = ExtResource("28_4k2k6")
+
+[node name="Sloth_Temp_1" type="TextureButton" parent="SlothLayer/SlothUIToggle" unique_id=1122048493]
+visible = false
+layout_mode = 0
+offset_left = -252.0
+offset_top = -77.27002
+offset_right = -2.0
+offset_bottom = 11.72998
+texture_normal = ExtResource("29_0rl1p")
+
+[node name="Sloth_Temp_2" type="TextureButton" parent="SlothLayer/SlothUIToggle" unique_id=1814459917]
+visible = false
+layout_mode = 0
+offset_left = -252.0
+offset_top = -77.27002
+offset_right = -2.0
+offset_bottom = 11.72998
+texture_normal = ExtResource("30_ok6jj")
+
+[node name="Sloth_Temp_3" type="TextureButton" parent="SlothLayer/SlothUIToggle" unique_id=1045431656]
+visible = false
+layout_mode = 0
+offset_left = -252.0
+offset_top = -77.27002
+offset_right = -2.0
+offset_bottom = 11.72998
+texture_normal = ExtResource("31_facbu")
+
+[node name="Sloth_Temp_4" type="TextureButton" parent="SlothLayer/SlothUIToggle" unique_id=1918624450]
+visible = false
+layout_mode = 0
+offset_left = -252.0
+offset_top = -77.27002
+offset_right = -2.0
+offset_bottom = 11.72998
+texture_normal = ExtResource("32_b1qrp")
+
+[node name="Sloth_Temp_5" type="TextureButton" parent="SlothLayer/SlothUIToggle" unique_id=759195548]
+visible = false
+layout_mode = 0
+offset_left = -252.0
+offset_top = -77.27002
+offset_right = -2.0
+offset_bottom = 11.72998
+texture_normal = ExtResource("33_come4")
+
+[node name="SlothSoulsPerSec" type="Label" parent="SlothLayer/SlothUIToggle" unique_id=1164005976]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 11.72998
+offset_right = 157.0
+offset_bottom = 47.72998
+theme_override_fonts/font = SubResource("FontVariation_kq58d")
+theme_override_font_sizes/font_size = 24
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("46_wnkbs")
+
+[node name="SlothHeatDecayTimer" type="Timer" parent="SlothLayer/SlothUIToggle" unique_id=1453380300]
+wait_time = 15.0
+autostart = true
+
+[node name="WrathLayer" type="Node" parent="." unique_id=272825217 node_paths=PackedStringArray("progress_bar", "temp_cost_text", "souls_per_sec_text", "heat_temp_button", "ticker", "decay_timer", "souls_regen_timer")]
+script = ExtResource("6_0rl1p")
+layer_name = "gluttony"
+progress_bar = NodePath("WrathUIToggle/WrathSoulsAmount")
+temp_cost_text = NodePath("WrathUIToggle/WrathTempCost")
+souls_per_sec_text = NodePath("WrathUIToggle/WrathSoulsPerSec")
+heat_temp_button = NodePath("WrathUIToggle/Wrath_Temp_0")
+ticker = NodePath("WrathUIToggle/WrathSoulsTicker")
+decay_timer = NodePath("WrathUIToggle/WrathHeatDecayTimer")
+souls_regen_timer = NodePath("../SoulsRegenTimer")
+heat_lvl_cost_base_rate = 600
+heat_lvl_cost = 600
+heat_lvl_next_cost = 600
+max_souls = 10000
+soul_gen_base_rate = 100
+soul_gen_rate = 100
+metadata/_custom_type_script = "uid://o5re73txwa2v"
+
+[node name="WrathUIToggle" type="Control" parent="WrathLayer" unique_id=13107601]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_left = 363.0
+offset_top = 1378.31
+offset_right = 403.0
+offset_bottom = 1418.3113
+
+[node name="HellMakerWrath" type="Sprite2D" parent="WrathLayer/WrathUIToggle" unique_id=1648742478]
+position = Vector2(181, -45)
+texture = ExtResource("51_blkrb")
+
+[node name="WrathSoulsTicker" type="TextureProgressBar" parent="WrathLayer/WrathUIToggle" unique_id=1539270973]
+layout_mode = 0
+offset_left = 50.0
+offset_top = -61.319946
+offset_right = 125.0
+offset_bottom = 16.680054
+scale = Vector2(0.8, 0.8)
+value = 100.0
+fill_mode = 3
+texture_progress = ExtResource("13_2cqfq")
+tint_over = Color(0.012617188, 0.012617188, 0.012617188, 0)
+tint_progress = Color(0.05882353, 0.2, 0.38431373, 1)
+
+[node name="WrathSoulsAmount" type="ProgressBar" parent="WrathLayer/WrathUIToggle" unique_id=646388703]
+layout_mode = 0
+offset_left = 123.0
+offset_top = -64.31995
+offset_right = 452.0
+offset_bottom = 10.680054
+theme_override_styles/fill = SubResource("StyleBoxFlat_abqjc")
+max_value = 15000.0
+show_percentage = false
+script = ExtResource("52_abqjc")
+
+[node name="WrathTempCost" type="Label" parent="WrathLayer/WrathUIToggle" unique_id=105359338]
+layout_mode = 0
+offset_left = -215.76556
+offset_top = 17.680054
+offset_right = -63.765564
+offset_bottom = 53.680054
+theme_override_fonts/font = SubResource("FontVariation_kq58d")
+theme_override_font_sizes/font_size = 24
+text = "100"
+vertical_alignment = 1
+
+[node name="HellMakerFireIcon3" type="Sprite2D" parent="WrathLayer/WrathUIToggle" unique_id=1375885934]
+position = Vector2(-229.76563, 30.680054)
+scale = Vector2(0.21595126, 0.21595128)
+texture = ExtResource("13_vivmo")
+
+[node name="Wrath_Fire" type="TextureButton" parent="WrathLayer/WrathUIToggle" unique_id=975908525]
+layout_mode = 0
+offset_left = 490.0
+offset_top = -70.31995
+offset_right = 616.0
+offset_bottom = 18.680054
+texture_normal = ExtResource("53_e71vb")
+texture_pressed = ExtResource("54_rnkwl")
+texture_hover = ExtResource("55_vke2r")
+
+[node name="Wrath_Temp_0" type="TextureButton" parent="WrathLayer/WrathUIToggle" unique_id=789629998]
+layout_mode = 0
+offset_left = -252.0
+offset_top = -71.31995
+offset_right = -2.0
+offset_bottom = 17.680054
+texture_normal = ExtResource("28_4k2k6")
+
+[node name="Wrath_Temp_1" type="TextureButton" parent="WrathLayer/WrathUIToggle" unique_id=267249613]
+visible = false
+layout_mode = 0
+offset_left = -252.0
+offset_top = -71.31995
+offset_right = -2.0
+offset_bottom = 17.680054
+texture_normal = ExtResource("29_0rl1p")
+
+[node name="Wrath_Temp_2" type="TextureButton" parent="WrathLayer/WrathUIToggle" unique_id=441854850]
+visible = false
+layout_mode = 0
+offset_left = -252.0
+offset_top = -71.31995
+offset_right = -2.0
+offset_bottom = 17.680054
+texture_normal = ExtResource("30_ok6jj")
+
+[node name="Wrath_Temp_3" type="TextureButton" parent="WrathLayer/WrathUIToggle" unique_id=160347186]
+visible = false
+layout_mode = 0
+offset_left = -252.0
+offset_top = -71.31995
+offset_right = -2.0
+offset_bottom = 17.680054
+texture_normal = ExtResource("31_facbu")
+
+[node name="Wrath_Temp_4" type="TextureButton" parent="WrathLayer/WrathUIToggle" unique_id=1223923179]
+visible = false
+layout_mode = 0
+offset_left = -252.0
+offset_top = -71.31995
+offset_right = -2.0
+offset_bottom = 17.680054
+texture_normal = ExtResource("32_b1qrp")
+
+[node name="Wrath_Temp_5" type="TextureButton" parent="WrathLayer/WrathUIToggle" unique_id=174074091]
+visible = false
+layout_mode = 0
+offset_left = -252.0
+offset_top = -71.31995
+offset_right = -2.0
+offset_bottom = 17.680054
+texture_normal = ExtResource("33_come4")
+
+[node name="WrathSoulsPerSec" type="Label" parent="WrathLayer/WrathUIToggle" unique_id=1908313076]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 16.680054
+offset_right = 157.0
+offset_bottom = 52.680054
+theme_override_fonts/font = SubResource("FontVariation_kq58d")
+theme_override_font_sizes/font_size = 24
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("53_6iyjs")
+
+[node name="WrathHeatDecayTimer" type="Timer" parent="WrathLayer/WrathUIToggle" unique_id=1377455188]
+wait_time = 15.0
+autostart = true
+
+[node name="EnvyLayer" type="Node" parent="." unique_id=309201832 node_paths=PackedStringArray("progress_bar", "temp_cost_text", "souls_per_sec_text", "heat_temp_button", "ticker", "decay_timer", "souls_regen_timer")]
+script = ExtResource("6_0rl1p")
+layer_name = "gluttony"
+progress_bar = NodePath("EnvyUIToggle/EnvySoulsAmount")
+temp_cost_text = NodePath("EnvyUIToggle/EnvyTempCost")
+souls_per_sec_text = NodePath("EnvyUIToggle/EnvySoulsPerSec")
+heat_temp_button = NodePath("EnvyUIToggle/Envy_Temp_0")
+ticker = NodePath("EnvyUIToggle/EnvySoulsTicker")
+decay_timer = NodePath("EnvyUIToggle/EnvyHeatDecayTimer")
+souls_regen_timer = NodePath("../SoulsRegenTimer")
+heat_lvl_cost_base_rate = 600
+heat_lvl_cost = 600
+heat_lvl_next_cost = 600
+max_souls = 10000
+soul_gen_base_rate = 100
+soul_gen_rate = 100
+metadata/_custom_type_script = "uid://o5re73txwa2v"
+
+[node name="EnvyUIToggle" type="Control" parent="EnvyLayer" unique_id=1439537146]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_left = 363.0
+offset_top = 1600.0
+offset_right = 403.0
+offset_bottom = 1640.0012
+
+[node name="HellMakerEnvy" type="Sprite2D" parent="EnvyLayer/EnvyUIToggle" unique_id=923193750]
+position = Vector2(181, -45)
+texture = ExtResource("57_uit24")
+
+[node name="EnvySoulsTicker" type="TextureProgressBar" parent="EnvyLayer/EnvyUIToggle" unique_id=872804408]
+layout_mode = 0
+offset_left = 50.0
+offset_top = -70.0
+offset_right = 125.0
+offset_bottom = 8.0
+scale = Vector2(0.8, 0.8)
+value = 100.0
+fill_mode = 3
+texture_progress = ExtResource("13_2cqfq")
+tint_over = Color(0.012617188, 0.012617188, 0.012617188, 0)
+tint_progress = Color(0.05882353, 0.2, 0.38431373, 1)
+
+[node name="EnvySoulsAmount" type="ProgressBar" parent="EnvyLayer/EnvyUIToggle" unique_id=1488674367]
+layout_mode = 0
+offset_left = 123.0
+offset_top = -73.0
+offset_right = 452.0
+offset_bottom = 2.0
+theme_override_styles/fill = SubResource("StyleBoxFlat_1vm84")
+max_value = 15000.0
+show_percentage = false
+script = ExtResource("57_vke2r")
+
+[node name="EnvyTempCost" type="Label" parent="EnvyLayer/EnvyUIToggle" unique_id=62464824]
+layout_mode = 0
+offset_left = -215.76556
+offset_top = 9.0
+offset_right = -63.765564
+offset_bottom = 45.0
+theme_override_fonts/font = SubResource("FontVariation_kq58d")
+theme_override_font_sizes/font_size = 24
+text = "100"
+vertical_alignment = 1
+
+[node name="HellMakerFireIcon3" type="Sprite2D" parent="EnvyLayer/EnvyUIToggle" unique_id=1184783585]
+position = Vector2(-229.76563, 22)
+scale = Vector2(0.21595126, 0.21595128)
+texture = ExtResource("13_vivmo")
+
+[node name="Envy_Fire" type="TextureButton" parent="EnvyLayer/EnvyUIToggle" unique_id=1703112154]
+layout_mode = 0
+offset_left = 490.0
+offset_top = -79.0
+offset_right = 616.0
+offset_bottom = 10.0
+texture_normal = ExtResource("59_pjyto")
+texture_pressed = ExtResource("60_sm6fg")
+texture_hover = ExtResource("61_b17eg")
+
+[node name="Envy_Temp_0" type="TextureButton" parent="EnvyLayer/EnvyUIToggle" unique_id=521074260]
+layout_mode = 0
+offset_left = -252.0
+offset_top = -80.0
+offset_right = -2.0
+offset_bottom = 9.0
+texture_normal = ExtResource("28_4k2k6")
+
+[node name="Envy_Temp_1" type="TextureButton" parent="EnvyLayer/EnvyUIToggle" unique_id=163434490]
+visible = false
+layout_mode = 0
+offset_left = -252.0
+offset_top = -80.0
+offset_right = -2.0
+offset_bottom = 9.0
+texture_normal = ExtResource("29_0rl1p")
+
+[node name="Envy_Temp_2" type="TextureButton" parent="EnvyLayer/EnvyUIToggle" unique_id=1546576801]
+visible = false
+layout_mode = 0
+offset_left = -252.0
+offset_top = -80.0
+offset_right = -2.0
+offset_bottom = 9.0
+texture_normal = ExtResource("30_ok6jj")
+
+[node name="Envy_Temp_3" type="TextureButton" parent="EnvyLayer/EnvyUIToggle" unique_id=1034109486]
+visible = false
+layout_mode = 0
+offset_left = -252.0
+offset_top = -80.0
+offset_right = -2.0
+offset_bottom = 9.0
+texture_normal = ExtResource("31_facbu")
+
+[node name="Envy_Temp_4" type="TextureButton" parent="EnvyLayer/EnvyUIToggle" unique_id=2088483922]
+visible = false
+layout_mode = 0
+offset_left = -252.0
+offset_top = -80.0
+offset_right = -2.0
+offset_bottom = 9.0
+texture_normal = ExtResource("32_b1qrp")
+
+[node name="Envy_Temp_5" type="TextureButton" parent="EnvyLayer/EnvyUIToggle" unique_id=780301813]
+visible = false
+layout_mode = 0
+offset_left = -252.0
+offset_top = -80.0
+offset_right = -2.0
+offset_bottom = 9.0
+texture_normal = ExtResource("33_come4")
+
+[node name="EnvySoulsPerSec" type="Label" parent="EnvyLayer/EnvyUIToggle" unique_id=830154872]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 8.0
+offset_right = 157.0
+offset_bottom = 44.0
+theme_override_fonts/font = SubResource("FontVariation_kq58d")
+theme_override_font_sizes/font_size = 24
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("58_uit24")
+
+[node name="EnvyHeatDecayTimer" type="Timer" parent="EnvyLayer/EnvyUIToggle" unique_id=1857503561]
+wait_time = 15.0
+autostart = true
+
+[node name="PrideLayer" type="Node" parent="." unique_id=149981756 node_paths=PackedStringArray("progress_bar", "temp_cost_text", "souls_per_sec_text", "heat_temp_button", "ticker", "decay_timer", "souls_regen_timer")]
+script = ExtResource("6_0rl1p")
+layer_name = "gluttony"
+progress_bar = NodePath("PrideUIToggle/PrideSoulsAmount")
+temp_cost_text = NodePath("PrideUIToggle/PrideTempCost")
+souls_per_sec_text = NodePath("PrideUIToggle/PrideSoulsPerSec")
+heat_temp_button = NodePath("PrideUIToggle/Pride_Temp_0")
+ticker = NodePath("PrideUIToggle/PrideSoulsTicker")
+decay_timer = NodePath("PrideUIToggle/PrideHeatDecayTimer")
+souls_regen_timer = NodePath("../SoulsRegenTimer")
+heat_lvl_cost_base_rate = 600
+heat_lvl_cost = 600
+heat_lvl_next_cost = 600
+max_souls = 10000
+soul_gen_base_rate = 100
+soul_gen_rate = 100
+metadata/_custom_type_script = "uid://o5re73txwa2v"
+
+[node name="PrideUIToggle" type="Control" parent="PrideLayer" unique_id=1041681791]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_left = 363.0
+offset_top = 1829.0
+offset_right = 403.0
+offset_bottom = 1869.0012
+
+[node name="HellMakerPride" type="Sprite2D" parent="PrideLayer/PrideUIToggle" unique_id=378801916]
+position = Vector2(181, -45)
+texture = ExtResource("63_sm6fg")
+
+[node name="PrideSoulsTicker" type="TextureProgressBar" parent="PrideLayer/PrideUIToggle" unique_id=1908017026]
+layout_mode = 0
+offset_left = 50.0
+offset_top = -75.0
+offset_right = 125.0
+offset_bottom = 3.0
+scale = Vector2(0.8, 0.8)
+value = 100.0
+fill_mode = 3
+texture_progress = ExtResource("13_2cqfq")
+tint_over = Color(0.012617188, 0.012617188, 0.012617188, 0)
+tint_progress = Color(0.05882353, 0.2, 0.38431373, 1)
+
+[node name="PrideSoulsAmount" type="ProgressBar" parent="PrideLayer/PrideUIToggle" unique_id=1254028040]
+layout_mode = 0
+offset_left = 123.0
+offset_top = -78.0
+offset_right = 452.0
+offset_bottom = -3.0
+theme_override_styles/fill = SubResource("StyleBoxFlat_wu3dr")
+max_value = 15000.0
+show_percentage = false
+script = ExtResource("64_1vm84")
+
+[node name="PrideTempCost" type="Label" parent="PrideLayer/PrideUIToggle" unique_id=2123311598]
+layout_mode = 0
+offset_left = -215.76556
+offset_top = 4.0
+offset_right = -63.765564
+offset_bottom = 40.0
+theme_override_fonts/font = SubResource("FontVariation_kq58d")
+theme_override_font_sizes/font_size = 24
+text = "100"
+vertical_alignment = 1
+
+[node name="HellMakerFireIcon3" type="Sprite2D" parent="PrideLayer/PrideUIToggle" unique_id=1464371272]
+position = Vector2(-229.76563, 17)
+scale = Vector2(0.21595126, 0.21595128)
+texture = ExtResource("13_vivmo")
+
+[node name="Pride_Fire" type="TextureButton" parent="PrideLayer/PrideUIToggle" unique_id=640426215]
+layout_mode = 0
+offset_left = 490.0
+offset_top = -84.0
+offset_right = 616.0
+offset_bottom = 5.0
+texture_normal = ExtResource("64_uatky")
+texture_pressed = ExtResource("65_rqtf5")
+texture_hover = ExtResource("66_1vm84")
+
+[node name="Pride_Temp_0" type="TextureButton" parent="PrideLayer/PrideUIToggle" unique_id=1631191039]
+layout_mode = 0
+offset_left = -252.0
+offset_top = -85.0
+offset_right = -2.0
+offset_bottom = 4.0
+texture_normal = ExtResource("28_4k2k6")
+
+[node name="Pride_Temp_1" type="TextureButton" parent="PrideLayer/PrideUIToggle" unique_id=2123458471]
+visible = false
+layout_mode = 0
+offset_left = -252.0
+offset_top = -85.0
+offset_right = -2.0
+offset_bottom = 4.0
+texture_normal = ExtResource("29_0rl1p")
+
+[node name="Pride_Temp_2" type="TextureButton" parent="PrideLayer/PrideUIToggle" unique_id=1941103503]
+visible = false
+layout_mode = 0
+offset_left = -252.0
+offset_top = -85.0
+offset_right = -2.0
+offset_bottom = 4.0
+texture_normal = ExtResource("30_ok6jj")
+
+[node name="Pride_Temp_3" type="TextureButton" parent="PrideLayer/PrideUIToggle" unique_id=687981000]
+visible = false
+layout_mode = 0
+offset_left = -252.0
+offset_top = -85.0
+offset_right = -2.0
+offset_bottom = 4.0
+texture_normal = ExtResource("31_facbu")
+
+[node name="Pride_Temp_4" type="TextureButton" parent="PrideLayer/PrideUIToggle" unique_id=467919286]
+visible = false
+layout_mode = 0
+offset_left = -252.0
+offset_top = -85.0
+offset_right = -2.0
+offset_bottom = 4.0
+texture_normal = ExtResource("32_b1qrp")
+
+[node name="Pride_Temp_5" type="TextureButton" parent="PrideLayer/PrideUIToggle" unique_id=1196059968]
+visible = false
+layout_mode = 0
+offset_left = -252.0
+offset_top = -85.0
+offset_right = -2.0
+offset_bottom = 4.0
+texture_normal = ExtResource("33_come4")
+
+[node name="PrideSoulsPerSec" type="Label" parent="PrideLayer/PrideUIToggle" unique_id=1574161598]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 3.0
+offset_right = 157.0
+offset_bottom = 39.0
+theme_override_fonts/font = SubResource("FontVariation_kq58d")
+theme_override_font_sizes/font_size = 24
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("68_wu3dr")
+
+[node name="PrideHeatDecayTimer" type="Timer" parent="PrideLayer/PrideUIToggle" unique_id=804213495]
+wait_time = 15.0
+autostart = true
+
+[connection signal="fire_changed" from="DataManager" to="GlobalUI/TotalFire" method="_on_data_manager_fire_changed"]
+[connection signal="souls_changed" from="DataManager" to="GlobalUI/TotalSouls" method="_on_data_manager_souls_changed"]
+[connection signal="pressed" from="GlobalUI/Unlock_Lust" to="DataManager" method="_on_unlock_lust_pressed"]
+[connection signal="pressed" from="GlobalUI/Unlock_Gluttony" to="DataManager" method="_on_unlock_gluttony_pressed"]
+[connection signal="pressed" from="GlobalUI/Unlock_Greed" to="DataManager" method="_on_unlock_greed_pressed"]
+[connection signal="pressed" from="GlobalUI/Unlock_Sloth" to="DataManager" method="_on_unlock_sloth_pressed"]
+[connection signal="pressed" from="GlobalUI/Unlock_Wrath" to="DataManager" method="_on_unlock_wrath_pressed"]
+[connection signal="pressed" from="GlobalUI/Unlock_Envy" to="DataManager" method="_on_unlock_envy_pressed"]
+[connection signal="pressed" from="GlobalUI/Unlock_Pride" to="DataManager" method="_on_unlock_pride_pressed"]
+[connection signal="timeout" from="SoulsRegenTimer" to="DataManager" method="_on_souls_regen_timer_timeout"]
+[connection signal="heat_lvl_next_cost_changed" from="LustLayer" to="LustLayer/LustUIToggle/LustTempCost" method="_on_lust_layer_heat_lvl_next_cost_changed"]
+[connection signal="soul_gen_rate_changed" from="LustLayer" to="LustLayer/LustUIToggle/LustSoulsPerSec" method="_on_lust_layer_soul_gen_rate_changed"]
+[connection signal="souls_per_layer_changed" from="LustLayer" to="LustLayer/LustUIToggle/LustSoulsAmount" method="_on_lust_layer_souls_per_layer_changed"]
+[connection signal="pressed" from="LustLayer/LustUIToggle/Lust_Fire" to="DataManager" method="_on_lust_fire_pressed"]
+[connection signal="pressed" from="LustLayer/LustUIToggle/Lust_Temp_0" to="DataManager" method="_on_lust_temp_all_pressed"]
+[connection signal="pressed" from="LustLayer/LustUIToggle/Lust_Temp_1" to="DataManager" method="_on_lust_temp_all_pressed"]
+[connection signal="pressed" from="LustLayer/LustUIToggle/Lust_Temp_2" to="DataManager" method="_on_lust_temp_all_pressed"]
+[connection signal="pressed" from="LustLayer/LustUIToggle/Lust_Temp_3" to="DataManager" method="_on_lust_temp_all_pressed"]
+[connection signal="pressed" from="LustLayer/LustUIToggle/Lust_Temp_4" to="DataManager" method="_on_lust_temp_all_pressed"]
+[connection signal="pressed" from="LustLayer/LustUIToggle/Lust_Temp_5" to="DataManager" method="_on_lust_temp_all_pressed"]
+[connection signal="timeout" from="LustLayer/LustUIToggle/LustHeatDecayTimer" to="DataManager" method="_on_lust_heat_decay_timer_timeout"]
+[connection signal="heat_lvl_next_cost_changed" from="GluttonyLayer" to="GluttonyLayer/GluttonyUIToggle/GluttonyTempCost" method="_on_lust_layer_heat_lvl_next_cost_changed"]
+[connection signal="soul_gen_rate_changed" from="GluttonyLayer" to="GluttonyLayer/GluttonyUIToggle/GluttonySoulsPerSec" method="_on_lust_layer_soul_gen_rate_changed"]
+[connection signal="souls_per_layer_changed" from="GluttonyLayer" to="GluttonyLayer/GluttonyUIToggle/GluttonySoulsAmount" method="_on_gluttony_layer_souls_per_layer_changed"]
+[connection signal="pressed" from="GluttonyLayer/GluttonyUIToggle/Gluttony_Fire" to="DataManager" method="_on_gluttony_fire_pressed"]
+[connection signal="pressed" from="GluttonyLayer/GluttonyUIToggle/Gluttony_Temp_0" to="DataManager" method="_on_gluttony_temp_pressed"]
+[connection signal="pressed" from="GluttonyLayer/GluttonyUIToggle/Gluttony_Temp_1" to="DataManager" method="_on_gluttony_temp_pressed"]
+[connection signal="pressed" from="GluttonyLayer/GluttonyUIToggle/Gluttony_Temp_2" to="DataManager" method="_on_gluttony_temp_pressed"]
+[connection signal="pressed" from="GluttonyLayer/GluttonyUIToggle/Gluttony_Temp_3" to="DataManager" method="_on_gluttony_temp_pressed"]
+[connection signal="pressed" from="GluttonyLayer/GluttonyUIToggle/Gluttony_Temp_4" to="DataManager" method="_on_gluttony_temp_pressed"]
+[connection signal="pressed" from="GluttonyLayer/GluttonyUIToggle/Gluttony_Temp_5" to="DataManager" method="_on_gluttony_temp_pressed"]
+[connection signal="timeout" from="GluttonyLayer/GluttonyUIToggle/GluttonyHeatDecayTimer" to="DataManager" method="_on_gluttony_heat_decay_timer_timeout"]
+[connection signal="heat_lvl_next_cost_changed" from="GreedLayer" to="GreedLayer/GreedUIToggle/GreedTempCost" method="_on_lust_layer_heat_lvl_next_cost_changed"]
+[connection signal="soul_gen_rate_changed" from="GreedLayer" to="GreedLayer/GreedUIToggle/GreedSoulsPerSec" method="_on_lust_layer_soul_gen_rate_changed"]
+[connection signal="souls_per_layer_changed" from="GreedLayer" to="GreedLayer/GreedUIToggle/GreedSoulsAmount" method="_on_greed_layer_souls_per_layer_changed"]
+[connection signal="pressed" from="GreedLayer/GreedUIToggle/Greed_Fire" to="DataManager" method="_on_greed_fire_pressed"]
+[connection signal="pressed" from="GreedLayer/GreedUIToggle/Greed_Temp_0" to="DataManager" method="_on_greed_temp_pressed"]
+[connection signal="pressed" from="GreedLayer/GreedUIToggle/Greed_Temp_1" to="DataManager" method="_on_greed_temp_pressed"]
+[connection signal="pressed" from="GreedLayer/GreedUIToggle/Greed_Temp_2" to="DataManager" method="_on_greed_temp_pressed"]
+[connection signal="pressed" from="GreedLayer/GreedUIToggle/Greed_Temp_3" to="DataManager" method="_on_greed_temp_pressed"]
+[connection signal="pressed" from="GreedLayer/GreedUIToggle/Greed_Temp_4" to="DataManager" method="_on_greed_temp_pressed"]
+[connection signal="pressed" from="GreedLayer/GreedUIToggle/Greed_Temp_5" to="DataManager" method="_on_greed_temp_pressed"]
+[connection signal="timeout" from="GreedLayer/GreedUIToggle/GreedHeatDecayTimer" to="DataManager" method="_on_greed_heat_decay_timer_timeout"]
+[connection signal="heat_lvl_next_cost_changed" from="SlothLayer" to="SlothLayer/SlothUIToggle/SlothTempCost" method="_on_lust_layer_heat_lvl_next_cost_changed"]
+[connection signal="soul_gen_rate_changed" from="SlothLayer" to="SlothLayer/SlothUIToggle/SlothSoulsPerSec" method="_on_lust_layer_soul_gen_rate_changed"]
+[connection signal="souls_per_layer_changed" from="SlothLayer" to="SlothLayer/SlothUIToggle/SlothSoulsAmount" method="_on_greed_layer_souls_per_layer_changed"]
+[connection signal="pressed" from="SlothLayer/SlothUIToggle/Sloth_Fire" to="DataManager" method="_on_sloth_fire_pressed"]
+[connection signal="pressed" from="SlothLayer/SlothUIToggle/Sloth_Temp_0" to="DataManager" method="_on_sloth_temp_pressed"]
+[connection signal="pressed" from="SlothLayer/SlothUIToggle/Sloth_Temp_1" to="DataManager" method="_on_sloth_temp_pressed"]
+[connection signal="pressed" from="SlothLayer/SlothUIToggle/Sloth_Temp_2" to="DataManager" method="_on_sloth_temp_pressed"]
+[connection signal="pressed" from="SlothLayer/SlothUIToggle/Sloth_Temp_3" to="DataManager" method="_on_sloth_temp_pressed"]
+[connection signal="pressed" from="SlothLayer/SlothUIToggle/Sloth_Temp_4" to="DataManager" method="_on_sloth_temp_pressed"]
+[connection signal="pressed" from="SlothLayer/SlothUIToggle/Sloth_Temp_5" to="DataManager" method="_on_sloth_temp_pressed"]
+[connection signal="timeout" from="SlothLayer/SlothUIToggle/SlothHeatDecayTimer" to="DataManager" method="_on_sloth_heat_decay_timer_timeout"]
+[connection signal="heat_lvl_next_cost_changed" from="WrathLayer" to="WrathLayer/WrathUIToggle/WrathTempCost" method="_on_lust_layer_heat_lvl_next_cost_changed"]
+[connection signal="soul_gen_rate_changed" from="WrathLayer" to="WrathLayer/WrathUIToggle/WrathSoulsPerSec" method="_on_lust_layer_soul_gen_rate_changed"]
+[connection signal="souls_per_layer_changed" from="WrathLayer" to="WrathLayer/WrathUIToggle/WrathSoulsAmount" method="_on_greed_layer_souls_per_layer_changed"]
+[connection signal="pressed" from="WrathLayer/WrathUIToggle/Wrath_Fire" to="DataManager" method="_on_wrath_fire_pressed"]
+[connection signal="pressed" from="WrathLayer/WrathUIToggle/Wrath_Temp_0" to="DataManager" method="_on_wrath_temp_pressed"]
+[connection signal="pressed" from="WrathLayer/WrathUIToggle/Wrath_Temp_1" to="DataManager" method="_on_wrath_temp_pressed"]
+[connection signal="pressed" from="WrathLayer/WrathUIToggle/Wrath_Temp_2" to="DataManager" method="_on_wrath_temp_pressed"]
+[connection signal="pressed" from="WrathLayer/WrathUIToggle/Wrath_Temp_3" to="DataManager" method="_on_wrath_temp_pressed"]
+[connection signal="pressed" from="WrathLayer/WrathUIToggle/Wrath_Temp_4" to="DataManager" method="_on_wrath_temp_pressed"]
+[connection signal="pressed" from="WrathLayer/WrathUIToggle/Wrath_Temp_5" to="DataManager" method="_on_wrath_temp_pressed"]
+[connection signal="timeout" from="WrathLayer/WrathUIToggle/WrathHeatDecayTimer" to="DataManager" method="_on_wrath_heat_decay_timer_timeout"]
+[connection signal="heat_lvl_next_cost_changed" from="EnvyLayer" to="EnvyLayer/EnvyUIToggle/EnvyTempCost" method="_on_lust_layer_heat_lvl_next_cost_changed"]
+[connection signal="soul_gen_rate_changed" from="EnvyLayer" to="EnvyLayer/EnvyUIToggle/EnvySoulsPerSec" method="_on_lust_layer_soul_gen_rate_changed"]
+[connection signal="souls_per_layer_changed" from="EnvyLayer" to="EnvyLayer/EnvyUIToggle/EnvySoulsAmount" method="_on_greed_layer_souls_per_layer_changed"]
+[connection signal="pressed" from="EnvyLayer/EnvyUIToggle/Envy_Fire" to="DataManager" method="_on_envy_fire_pressed"]
+[connection signal="pressed" from="EnvyLayer/EnvyUIToggle/Envy_Temp_0" to="DataManager" method="_on_envy_temp_pressed"]
+[connection signal="pressed" from="EnvyLayer/EnvyUIToggle/Envy_Temp_1" to="DataManager" method="_on_envy_temp_pressed"]
+[connection signal="pressed" from="EnvyLayer/EnvyUIToggle/Envy_Temp_2" to="DataManager" method="_on_envy_temp_pressed"]
+[connection signal="pressed" from="EnvyLayer/EnvyUIToggle/Envy_Temp_3" to="DataManager" method="_on_envy_temp_pressed"]
+[connection signal="pressed" from="EnvyLayer/EnvyUIToggle/Envy_Temp_4" to="DataManager" method="_on_envy_temp_pressed"]
+[connection signal="pressed" from="EnvyLayer/EnvyUIToggle/Envy_Temp_5" to="DataManager" method="_on_envy_temp_pressed"]
+[connection signal="timeout" from="EnvyLayer/EnvyUIToggle/EnvyHeatDecayTimer" to="DataManager" method="_on_envy_heat_decay_timer_timeout"]
+[connection signal="heat_lvl_next_cost_changed" from="PrideLayer" to="PrideLayer/PrideUIToggle/PrideTempCost" method="_on_lust_layer_heat_lvl_next_cost_changed"]
+[connection signal="soul_gen_rate_changed" from="PrideLayer" to="PrideLayer/PrideUIToggle/PrideSoulsPerSec" method="_on_lust_layer_soul_gen_rate_changed"]
+[connection signal="souls_per_layer_changed" from="PrideLayer" to="PrideLayer/PrideUIToggle/PrideSoulsAmount" method="_on_greed_layer_souls_per_layer_changed"]
+[connection signal="pressed" from="PrideLayer/PrideUIToggle/Pride_Fire" to="DataManager" method="_on_pride_fire_pressed"]
+[connection signal="pressed" from="PrideLayer/PrideUIToggle/Pride_Temp_0" to="DataManager" method="_on_pride_temp_pressed"]
+[connection signal="pressed" from="PrideLayer/PrideUIToggle/Pride_Temp_1" to="DataManager" method="_on_pride_temp_pressed"]
+[connection signal="pressed" from="PrideLayer/PrideUIToggle/Pride_Temp_2" to="DataManager" method="_on_pride_temp_pressed"]
+[connection signal="pressed" from="PrideLayer/PrideUIToggle/Pride_Temp_3" to="DataManager" method="_on_pride_temp_pressed"]
+[connection signal="pressed" from="PrideLayer/PrideUIToggle/Pride_Temp_4" to="DataManager" method="_on_pride_temp_pressed"]
+[connection signal="pressed" from="PrideLayer/PrideUIToggle/Pride_Temp_5" to="DataManager" method="_on_pride_temp_pressed"]
+[connection signal="timeout" from="PrideLayer/PrideUIToggle/PrideHeatDecayTimer" to="DataManager" method="_on_pride_heat_decay_timer_timeout"]
